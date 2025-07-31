@@ -52,17 +52,18 @@ nav {
   }
 
   .mainContent, #result {
-    width: 33%;
     padding: 20px;
     box-sizing: border-box;
   }
 
   .mainContent {
+    width: 33%;
     margin-left: 100px;
     text-align: left;
 }
 
   #result {
+    width: 25%;
     text-align: left;
     background-color: #fff;
 }
@@ -70,6 +71,8 @@ nav {
 #result img {width:100%;}
 
 #result p {padding-bottom:10px;}
+
+#searchInput {width:200px;}
 
 
   h2 {font-size:40px;}
