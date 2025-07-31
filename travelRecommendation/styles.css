@@ -3,8 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+h1 {
+    color: #fff;
+  }
+
 nav {
-    background-color: #f0f0f0;
+    background-color: #404241;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -24,7 +29,7 @@ nav {
   
   nav a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-weight: bold;
   }
   
@@ -32,12 +37,92 @@ nav {
   body {
     font-family: Arial, sans-serif;
     /* margin: 20px; */
+    background-image: url('bg.jpg');
   }
   
-  h1 {
+  h1, h2, p {
     margin-bottom: 20px;
   }
-  
-  div {
-    margin-bottom: 10px;
+
+  .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
   }
+
+  .mainContent, #result {
+    width: 33%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .mainContent {
+    margin-left: 100px;
+    text-align: left;
+}
+
+  #result {
+    text-align: left;
+    background-color: #fff;
+}
+
+#result img {width:100%;}
+
+#result p {padding-bottom:10px;}
+
+
+  h2 {font-size:40px;}
+
+    /* Some basic styling for demonstration purposes */
+    #contactForm {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      #contactForm input,
+      #contactForm textarea {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 8px;
+      }
+      #contactForm button, #btnBook {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      #contactForm button:hover, #btnBook:hover {
+        background-color: #0056b3;
+      }
+
+      .social-bar {
+        position: fixed;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .social-bar a {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        background-color: #007bff;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+      }
+    
+      .social-bar svg {
+        fill: white;
+        width: 24px;
+        height: 24px;
+      }
+    
+      .social-bar a:hover {
+        background-color: #0056b3;
+      }
